@@ -1,0 +1,146 @@
+.startConteiner {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.bid_plus_minus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    padding: 3px;
+
+}
+
+
+.bid_plus_minus  {
+    background-color: rgba(30, 30, 31, 0.788);
+    font-size: x-large;
+    border-radius: 7px;
+    color: aliceblue;
+
+}
+.bid_plus {
+    background-color: rgba(0, 255, 255, 0);
+    border: none;
+    font-size: x-large;
+    cursor: pointer;
+    color: aliceblue;
+}
+.bid_minus {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: x-large;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.bids_all_conteiner {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;  
+}
+.bids_all {
+    background-color: rgba(42, 49, 45, 0.748);
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 4px;
+    width: 70px;
+    margin-top: 4px;
+}
+.bids_all:hover {
+    background-color: rgb(42, 49, 45) ;
+}
+
+.start_btn {
+    width: 150px;
+    border-radius: 20px;
+    background-color: rgba(0, 128, 0, 0.633);
+    color: aliceblue;
+    font-size: large;
+    cursor: pointer;
+}
+
+.start_btn:hover {
+    background-color: rgb(0, 128, 0);
+}
+
+.start {
+    width: 530px;
+    background-color: rgba(7, 7, 7, 0.841);
+    border-radius: 20px;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 3px;
+    
+}
+
+
+.boxNumber {
+    background-color: black;
+}
+
+
+@media (max-width:420px) {
+
+    .bid_plus_minus {
+        width: 210px;
+        font-size: 14px;
+    }
+    .bids_all {
+        font-size: 14px;
+    }
+    .bids_all_conteiner {
+        width: 210px;
+    }
+    .start_btn {
+        width: 130px;
+        font-size: 14px;
+        padding: 1px;
+    }
+    .start {
+        width: 400px;
+        font-size: 14px;
+        padding: 10px;
+
+    }
+}
+@media (max-width:360px) {
+
+    .bid_plus_minus {
+        width: 160px;
+        font-size: 14px;
+    }
+    .bids_all {
+        font-size: 14px;
+    }
+    .bids_all_conteiner {
+        width: 160px;
+    }
+    .start_btn {
+        width: 100px;
+        font-size: 12px;
+    }
+    .start {
+        width: 330px;
+        font-size: 12px;
+        padding: 8px;
+
+    }
+}
+
+@media (max-width:320px) {
+
+
+    .start {
+        width: 300px;
+        font-size: 12px;
+        padding: 8px;
+
+    }
+}

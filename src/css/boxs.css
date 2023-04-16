@@ -1,0 +1,79 @@
+:root {
+    --sa: calc(1vh+1vw)
+}
+
+.section_anubis {
+    width: 600px;
+}
+.section_anubis >div>span {
+    /* width: 150px;
+    margin-top: 4px;
+    height: 60px; */
+    /* background-color: rgb(232, 223, 60); */
+}
+.section_anubis >div {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.boxs {
+    background: url(../img/Screenshot\ 2023-04-15\ 163200.png);
+    background-size: cover;
+    width: 150px;
+    height: 50px;
+    margin-top: 5px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.lose_boxs {
+    background: url(../img/Screenshot\ 2023-04-15\ 163200.png);
+    background-size: cover;
+    width: 150px;
+    height: 50px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.boxs_click {
+    background: url(../img/scringold.png);
+    background-size: cover;
+    width: 150px;
+    height: 50px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.lose_boxs_click {
+    background: url(../img/scrinred.png);
+    background-size: cover;
+    width: 150px;
+    height: 50px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-block;
+    
+}
+
+
+
+
+.boxs_await {
+    background: url(../img/scrinawait.png);
+    background-size: cover;
+    width: 150px;
+    height: 110px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+

@@ -1,0 +1,47 @@
+
+header {
+    width: 700px;
+    background-color: rgb(134, 105, 1);
+    color: rgb(3, 3, 3);
+    font-weight: 700;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(195, 195, 10);
+}
+
+.anubis_header_boxs {
+    display: inline-block;
+}
+.anubis_boxs_1,.anubis_boxs_2,.anubis_boxs_3{
+    display: inline-block;
+    padding: 6px;
+    margin: 5px;
+    transform: rotate(45deg);
+    border: 1.5px solid rgb(191, 191, 1);
+    background-color: rgb(0, 109, 0);
+}
+
+.anubis_boxs_4 {
+    display: inline-block;
+    padding: 6px;
+    margin: 5px;
+    transform: rotate(45deg);
+    border: 1.5px solid rgb(191, 191, 1);
+    background-color:brown
+}
+
+.anubis_icon_header {
+    background-image: url(../img/free-icon-anubis-6359795.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 19px;
+    display: inline-block;
+}
+
+.acordion {
+    background-color: rgba(250, 235, 215, 0);
+    border: none;
+    border-left: 4px solid black;
+}

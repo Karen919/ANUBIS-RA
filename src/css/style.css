@@ -1,0 +1,19 @@
+body{
+  background-image: url(../img/e440d856282895.59a7da56a8247.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
