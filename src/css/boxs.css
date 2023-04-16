@@ -26,6 +26,8 @@
     display: inline-block;
     text-align: center;
     border-radius: 20px;
+    cursor: pointer;
+
 }
 
 .lose_boxs {
@@ -37,6 +39,8 @@
     text-align: center;
     border-radius: 20px;
     display: inline-block;
+    cursor: pointer;
+
 }
 
 .boxs_click {
@@ -48,6 +52,8 @@
     text-align: center;
     border-radius: 20px;
     display: inline-block;
+    cursor: pointer;
+
 }
 
 .lose_boxs_click {
@@ -59,7 +65,7 @@
     text-align: center;
     border-radius: 20px;
     display: inline-block;
-    
+    cursor: pointer;
 }
 
 
@@ -74,6 +80,7 @@
     text-align: center;
     border-radius: 20px;
     display: inline-block;
+    cursor: pointer;
 }
 
 

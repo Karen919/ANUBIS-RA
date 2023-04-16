@@ -26,6 +26,36 @@ const[box7,setBoxs6] =  useState(demoBoxsConteiner[6].map( (value,index) => valu
 const[box8,setBoxs7] =  useState(demoBoxsConteiner[7].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
 const[box9,setBoxs8] =  useState(demoBoxsConteiner[8].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
 
+function reload() {
+  setBoxs0(demoBoxsConteiner[0].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
+  setBoxs1(demoBoxsConteiner[1].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
+  setBoxs2(demoBoxsConteiner[2].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
+  setBoxs3(demoBoxsConteiner[3].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
+  setBoxs4(demoBoxsConteiner[4].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
+  setBoxs5(demoBoxsConteiner[5].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
+  setBoxs6(demoBoxsConteiner[6].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
+  setBoxs7(demoBoxsConteiner[7].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
+  setBoxs8(demoBoxsConteiner[8].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs" ></span> : <span  key={index}  className="lose_boxs"></span>))
+  setBidDefault(0)
+  document.getElementById('header').className = ' '
+  document.getElementById('anubis_icon_header').className = 'anubis_icon_header';
+  document.getElementById('startContain').style.display = 'flex';
+  document.getElementById('hiddenStartContain').style.display= 'none'
+
+}
+
+function alertLose (){
+          document.getElementById('header').className = 'header_click'
+          document.getElementById('anubis_icon_header').className = 'anubis';
+          
+}
+
+function alertWin() {
+  document.getElementById('anubis_icon_header').className = 'anubis_icon_win'
+  document.getElementById('header').style.backgroundColor = 'gren'
+  document.getElementById('header').className = 'header_win'
+  setTimeout(()=>{reload()},4000)
+}
 async function start() {
   await new Promise((resolve, reject) => {
     setBoxs8(
@@ -33,28 +63,43 @@ async function start() {
         if (value !== ' ') {      
             return <span key={index} className="boxs_await " onClick={(e)=>{
           e.target.className= 'boxs_click'
+          setBidDefault(bidDefault * 2)
           return resolve()
             }}></span>
         } else {
           return  <span key={index} className="boxs_await" onClick={(e)=>{
           e.target.className = 'lose_boxs_click'
+          alertLose()
+          setTimeout(()=>{reload()},4000)
+          return reject()
+
           }} ></span> 
         } 
       })
     );
   });
   await new Promise((resolve, reject) => {
+    document.getElementById('startContain').style.display = 'none';
+    document.getElementById('hiddenStartContain').style.display= 'inherit'
     setBoxs8(demoBoxsConteiner[8].map( (value,index) => value !== ' ' ? <span  key={index} className="boxs_click" ></span> : <span  key={index}  className="lose_boxs_click"></span>));
     setBoxs7(
       demoBoxsConteiner[7].map((value, index) => {
         if (value !== ' ') {      
             return <span key={index} className="boxs_await " onClick={(e)=>{
           e.target.className= 'boxs_click'
+          setBidDefault(bidDefault*3)
+          
           return resolve()
             }}></span>
         } else {
           return  <span key={index} className="boxs_await" onClick={(e)=>{
           e.target.className = 'lose_boxs_click'
+          alertLose()
+
+          setTimeout(()=>{reload()},4000)
+
+          return reject()
+
           }} ></span> 
         } 
       })
@@ -67,11 +112,19 @@ async function start() {
         if (value !== ' ') {      
             return <span key={index} className="boxs_await " onClick={(e)=>{
           e.target.className= 'boxs_click'
+          setBidDefault(bidDefault*4)
+
           return resolve()
             }}></span>
         } else {
           return  <span key={index} className="boxs_await" onClick={(e)=>{
-          e.target.className = 'lose_boxs_click'
+          e.target.className = 'lose_boxs_click';
+          alertLose()
+
+          setTimeout(()=>{reload()},4000)
+
+          return reject()
+
           }} ></span> 
         } 
       })
@@ -85,11 +138,19 @@ async function start() {
         if (value !== ' ') {      
             return <span key={index} className="boxs_await " onClick={(e)=>{
           e.target.className= 'boxs_click'
+          setBidDefault(bidDefault*5)
+
           return resolve()
             }}></span>
         } else {
           return  <span key={index} className="boxs_await" onClick={(e)=>{
-          e.target.className = 'lose_boxs_click'
+          e.target.className = 'lose_boxs_click';
+          alertLose()
+
+          setTimeout(()=>{reload()},4000)
+
+          return reject()
+
           }} ></span> 
         } 
       })
@@ -103,11 +164,19 @@ async function start() {
         if (value !== ' ') {      
             return <span key={index} className="boxs_await " onClick={(e)=>{
           e.target.className= 'boxs_click'
+          setBidDefault(bidDefault*6)
+
           return resolve()
             }}></span>
         } else {
           return  <span key={index} className="boxs_await" onClick={(e)=>{
           e.target.className = 'lose_boxs_click'
+          alertLose()
+
+          setTimeout(()=>{reload()},4000)
+
+          return reject()
+
           }} ></span> 
         } 
       })
@@ -121,11 +190,19 @@ async function start() {
         if (value !== ' ') {      
             return <span key={index} className="boxs_await " onClick={(e)=>{
           e.target.className= 'boxs_click'
+          setBidDefault(bidDefault*7)
+
           return resolve()
             }}></span>
         } else {
           return  <span key={index} className="boxs_await" onClick={(e)=>{
           e.target.className = 'lose_boxs_click'
+          alertLose()
+
+          setTimeout(()=>{reload()},4000)
+
+          return reject()
+
           }} ></span> 
         } 
       })
@@ -139,11 +216,19 @@ async function start() {
         if (value !== ' ') {      
             return <span key={index} className="boxs_await " onClick={(e)=>{
           e.target.className= 'boxs_click'
+          setBidDefault(bidDefault*8)
+
           return resolve()
             }}></span>
         } else {
           return  <span key={index} className="boxs_await" onClick={(e)=>{
           e.target.className = 'lose_boxs_click'
+          alertLose()
+
+          setTimeout(()=>{reload()},4000)
+
+          return reject()
+
           }} ></span> 
         } 
       })
@@ -157,11 +242,18 @@ async function start() {
         if (value !== ' ') {      
             return <span key={index} className="boxs_await " onClick={(e)=>{
           e.target.className= 'boxs_click'
+          setBidDefault(bidDefault*9)
+
           return resolve()
             }}></span>
         } else {
           return  <span key={index} className="boxs_await" onClick={(e)=>{
           e.target.className = 'lose_boxs_click'
+          alertLose()
+
+          setTimeout(()=>{reload()},4000)
+
+          return reject()
           }} ></span> 
         } 
       })
@@ -180,20 +272,25 @@ async function start() {
         } else {
           return  <span key={index} className="boxs_await" onClick={(e)=>{
           e.target.className = 'lose_boxs_click'
+          alertLose()
+
+          setTimeout(()=>{reload()},4000)
+          return reject()
           }} ></span> 
         } 
       })
     );
   });
+
 };
 
 return (
     <div className="App">
-      <header>
-        <span>
-          <span>Անուբիս</span>
-          <span className="anubis_icon_header"></span>
+      <header id="header">
+        <span className="anubis_icon_contein">
+          <span className="anubis_txt">Անուբիս</span>
           </span>
+          <span className="anubis_icon_header" id="anubis_icon_header"> </span>
           <span>        
           <ul className="anubis_header_boxs">
           <li className="anubis_boxs_1"></li>
@@ -220,10 +317,8 @@ return (
       </main>
       <footer>
       <div className="start">
-      <div className="coin_conteiner">
-        <p className="coins">{localStorage.getItem('name')}</p>
-      </div>
-      <div className="startConteiner">
+      <div id="hiddenStartContain" className="hiden_start_contain" onClick={alertWin}>{ ` վերցնել ${bidDefault} շահումը `}</div>
+      <div className="startConteiner" id="startContain">
         <div className="bid">
           <div className="bid_plus_minus">
             <button className="bid_plus" onClick={() => setBidDefault(bidDefault - 10)}>-</button>
@@ -236,7 +331,7 @@ return (
             <button className="bids_all" onClick={() => setBidDefault( bidDefault +250)}>+250</button>
           </div>
         </div>
-        <button className="start_btn" onClick={start}>START</button>
+        <button className="start_btn" onClick={start}>ՍԿՍԵԼ</button>
       </div>
     </div>
       </footer>

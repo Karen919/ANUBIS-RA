@@ -1,14 +1,45 @@
 
 header {
-    width: 700px;
-    background-color: rgb(134, 105, 1);
+    background: url(../img/headbg.jpeg);
+    background-size: cover;
+    /* background-size: cover; */
+    width: 600px;
     color: rgb(3, 3, 3);
-    font-weight: 700;
+    border-radius: 20px;
+    font-weight:620x;
     font-size: large;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid rgb(195, 195, 10);
+    /* border: 3px solid rgb(195, 195, 10); */
+}
+
+.header_click {
+    background: rgb(110,68,68);
+    background: linear-gradient(108deg, rgba(110,68,68,0.8968837535014006) 10%, rgba(110,68,68,0.5747549019607843) 28%, rgba(249,0,0,0.4431022408963585) 75%);
+    width: 600px;
+    color: rgb(3, 3, 3);
+    border-radius: 20px;
+    font-weight:620x;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 3px solid rgb(195, 195, 10); */
+}
+
+.header_win {
+    background: rgb(74, 110, 68);
+    background: linear-gradient(108deg, rgba(68, 110, 70, 0.897) 10%, rgba(73, 110, 68, 0.575) 28%, rgba(12, 249, 0, 0.443) 75%);
+    width: 600px;
+    color: rgb(3, 3, 3);
+    border-radius: 20px;
+    font-weight:620x;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 3px solid rgb(195, 195, 10); */
 }
 
 .anubis_header_boxs {
@@ -16,7 +47,7 @@ header {
 }
 .anubis_boxs_1,.anubis_boxs_2,.anubis_boxs_3{
     display: inline-block;
-    padding: 6px;
+    padding: 9px;
     margin: 5px;
     transform: rotate(45deg);
     border: 1.5px solid rgb(191, 191, 1);
@@ -25,7 +56,7 @@ header {
 
 .anubis_boxs_4 {
     display: inline-block;
-    padding: 6px;
+    padding: 9px;
     margin: 5px;
     transform: rotate(45deg);
     border: 1.5px solid rgb(191, 191, 1);
@@ -36,12 +67,48 @@ header {
     background-image: url(../img/free-icon-anubis-6359795.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 19px;
+    padding: 29px;
+    display: inline-block;
+}
+
+.anubis_icon {
+    padding: 29px;
+    display: inline-block;
+}
+.anubis_txt {
+    font-size: x-large;
+    font-weight: 900;
+    color: goldenrod;
+}
+.anubis_icon_win {
+    background-image: url(../img/Anubis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    display: inline-block;
+}
+.anubis {
+    background-image: url(../img/pngwing.com.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
     display: inline-block;
 }
 
 .acordion {
-    background-color: rgba(250, 235, 215, 0);
+    background-color: rgba(255, 217, 0, 0);
+    color: goldenrod;
     border: none;
-    border-left: 4px solid black;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: xx-large;
+    font-weight: 900;
 }
+/* 
+.anubis_icon_contein {
+    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
