@@ -1,5 +1,11 @@
-body{
-  background-image: url(../img/e440d856282895.59a7da56a8247.png);
+.body_anubis{
+  background:url(../img/118Z_2012.w026.n002.10B.p1.10.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body_ra{
+  background:url(../img/bgsun.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -17,3 +23,4 @@ body{
   'GRAD' 0,
   'opsz' 48
 }
+

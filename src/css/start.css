@@ -94,8 +94,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1b8821c7;
-    border-radius: 30px;
+    background: rgb(0,71,182);
+    background: linear-gradient(108deg, rgba(0,71,182,0.768032212885154) 23%, rgba(0,134,255,0.6811974789915967) 54%);    border-radius: 30px;
     font-size: xx-large;
     color: goldenrod;
     margin-top: 6px;

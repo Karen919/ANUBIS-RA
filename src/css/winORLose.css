@@ -1,0 +1,55 @@
+.anubis_icon_win {
+    background-image: url(../img/Anubis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px;
+    display: inline-block;
+    text-align: center;
+    
+}
+.anubis_header_win {
+    background: rgb(74, 110, 68);
+    background: linear-gradient(108deg, rgba(68, 110, 70, 0.897) 10%, rgba(73, 110, 68, 0.575) 28%, rgba(12, 249, 0, 0.443) 75%);
+    width: 600px;
+    color: rgb(3, 3, 3);
+    border-radius: 20px;
+    font-weight:620x;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    text-align: center;
+    /* border: 3px solid rgb(195, 195, 10); */
+}
+
+
+.ra_icon_win {
+    background-image: url(../img/favpng_smite-apollo-ancient-egyptian-deities-ra.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px;
+    display: inline-block;
+    text-align: center;
+    
+}
+.ra_header_win {
+    background: rgb(74, 110, 68);
+    background: linear-gradient(108deg, rgba(68, 110, 70, 0.897) 10%, rgba(73, 110, 68, 0.575) 28%, rgba(12, 249, 0, 0.443) 75%);
+    width: 600px;
+    color: rgb(3, 3, 3);
+    border-radius: 20px;
+    font-weight:620x;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    text-align: center;
+    /* border: 3px solid rgb(195, 195, 10); */
+}
+
+
+
